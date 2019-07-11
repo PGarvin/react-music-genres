@@ -1,0 +1,87 @@
+.country {background: #f68d44}
+.folk {background: #fcc58a}
+.alternativeindierock {background: #733236}
+.rock {background: #9b2d33}
+.poprock {background: #da6149}
+.pop {background: #e69484}
+.rnbsoul {background: #5b6943}
+.disco {background: #788757}
+.electronic {background: #9dae77}
+.hiphop {background: #c3cca0}
+.funk {background: #dadfbc}
+.jazz {background: #58889e}
+.reggae {background: #00799b}
+.world {background: #00556f}
+.soundtrack {background: #aaa}
+
+    h1.miller-reg {
+        font-family: Miller, Georgia, Times, serif;
+        font-weight: 400;
+        font-size:2em; line-height:1.2em;
+    }
+
+	.graphichead {font-family:'BentonSans', Helvetica, Arial, sans-serif; font-size:1.2em;font-weight:bold; display:block; margin-top:2em; margin-bottom:1em;}
+	.subtitle {font-family:'BentonSans', Helvetica, Arial, sans-serif; font-size:0.9em; line-height:1.4em; margin-top:20px; margin-bottom:15px;}
+
+	.holder {width:100%; float:left; margin-bottom:.75em;}
+
+	#main {display:inline-block; margin-top:10px; width:100%;}
+
+
+	#key {width:100%; float:left; margin-top:0; margin-bottom:1em;}
+		.keyel {display:inline; float:left; margin-right:1em; width:39%;}
+		.keysq {display:inline; float:left; margin-right:.5em; width:15px; height:15px; -webkit-border-radius: 999px; -moz-border-radius: 999px; border-radius: 999px;}
+		.keytext {display:inline; float:left; font-family:'BentonSans', Helvetica, Arial, sans-serif; font-weight:normal; font-size: .75em; font-weight: lighter; text-transform: uppercase;}
+
+
+	.box {width:19px; height:19px; float:left; display:inline-block; margin:1px; cursor:pointer; cursor:hand; -webkit-border-radius: 999px; -moz-border-radius: 999px; border-radius: 999px;}
+	.boxes {width:100%; display:inline-block; float:left; }
+	.concept {width:100%; float:left; margin-bottom:.25em; font-family:'BentonSans', Helvetica, Arial, sans-serif; font-weight:bold; font-size:0.9em;}
+		
+	#chart {width:100%; position:relative;}
+
+	.textbox-full {padding: 0.5em 0.75em; z-index:3005; width:100%; float:left;}
+	.textbox {padding: 0.5em 0.75em; z-index:3005; width:100%; float:left;}
+	.video {width:100%; float:left; padding: 0.75em;}
+	
+	
+	.statename {font-family:'BentonSans', Helvetica, Arial, sans-serif; font-size:0.8em; font-weight: lighter; text-transform: uppercase; width:100%; float:left;}
+	.text {font-family:'BentonSans', Helvetica, Arial, sans-serif;}
+	.text span {font-weight:bold;}
+	
+	.bioholder {width: 100%; display:inline-block; clear:both; margin-top:13px; background:#eee; }
+
+	.active {border: 3px solid #000;}
+	
+	.btn {width:100%;}
+
+@media only screen and (min-width: 450px) {
+	.btn {width:49%;}
+	.keyel {width:30%;}
+	
+}
+
+@media only screen and (min-width: 500px) {
+	.box {width:30px; height:30px;}
+	.textbox {width:40%;}
+	.video {width:60%;}
+	
+}
+
+@media only screen and (min-width: 600px) {
+
+
+}
+
+@media only screen and (min-width: 800px) {
+
+	.keyel {width:22%;}
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	.graphichead {font-family:'BentonSans', Helvetica, Arial, sans-serif; font-weight:bold;}
+	.valueNum {font-family:'BentonSans', Helvetica, Arial, sans-serif; font-weight:bold;}
+
+}
