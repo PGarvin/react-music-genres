@@ -30,13 +30,21 @@ music.sort(function (a, b) {
 });
 
 const condensed = town => {
-	return "box "+town.split(" ").join("").split("-").join("").split("/").join("").toLowerCase();
+	return town.split(" ").join("").split("-").join("").split("/").join("").toLowerCase();
+}
+
+const boxClass = town => {
+	return "box " + condensed(town);
 }
 
 const SongItem = ({rank, year, artist, song, genre, youtube}) => {
+	function testClick(){
+		console.log(rank, year, artist, song);
+	}
+
 	return (
 
-		<div className={condensed(genre)}></div>
+		<button className={boxClass(genre)} key={condensed(song)} onClick={testClick}></button>
 
 	)
 }
@@ -75,15 +83,14 @@ export default class Table extends React.Component {
 
       for (let j = 0; j < music.length; j++) {
         if (music[j].Year === k) {
-        	//children.push(<td key={i+j+1}>d</td>)
         	yearData.push(music[j]);
         }
       }
 
-
-
+	let yearKey = "year"+k;
+	let finalTable = <div key={yearKey}><div className="concept">{k}</div><FullSong songs={yearData} key={k}/><div className="bio" id={`bio${k}`}></div></div>;
       //Create the parent and add the children
-      table.push(<FullSong songs={yearData}/>)
+      table.push(finalTable)
     }
     return table
   }
@@ -91,9 +98,9 @@ export default class Table extends React.Component {
 
   render() {
     return(
-      <table>
+      <div>
         {this.createTable(music)}
-      </table>
+      </div>
     )
   }
 
@@ -101,11 +108,7 @@ export default class Table extends React.Component {
 
 
 ReactDOM.render(
-	<div>
-		<div id="chart"></div>
-		<div id="main"></div>
-		<Table />
-	</div>,
+		<Table />,
 	document.getElementById('root')
 );
 
